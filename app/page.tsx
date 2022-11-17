@@ -1,57 +1,32 @@
-import Image from 'next/image'
-import styles from './page.module.css'
-
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js 13!</a>
+    <div className="text-center">
+      <header className="mb-8">
+        <h1 className="text-5xl font-bold mb-5">
+          Malt Academy Next.js 13
         </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://beta.nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js 13</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Explore the Next.js 13 playground.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/templates/next.js/app-directory?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>Deploy your Next.js site to a public URL with Vercel.</p>
-          </a>
+        <div className="text-lg text-slate-400">
+          <p>Bienvenue sur cette nouvelle Malt Academy.</p>
+          <p>Cette application a été créée pour vous apprendre à coder avec Next.js 13.</p>
+        </div>
+      </header>
+      <main>
+        <div className="mb-8">
+          <h2 className="text-3xl text-white mb-3">Cette page...</h2>
+          <div className="text-lg text-slate-400">
+            <p>Cette page se trouve dans la partie expérimentale de Next.js fournie par la nouvelle version de Nextjs.<br />Le chemin de cette page est: <span className="rounded-lg bg-slate-200 px-2 py-1 text-red-500 font-bold">app/page.tsx</span></p>
+          </div>
+        </div>
+        <div className="mb-8">
+          <h2 className="text-3xl text-white mb-3">Pour créer une nouvelle route</h2>
+          <div className="text-lg text-slate-400">
+            <p>Rendez-vous dans votre dossier <span className="rounded-lg bg-slate-200 px-2 py-1 text-red-500 font-bold">app</span></p>
+            <p>Créez un dossier du nom de votre route, ex: <span className="rounded-lg bg-slate-200 px-2 py-1 text-red-500 font-bold">/users</span>.</p>
+            <p>Puis créer un fichier <span className="rounded-lg bg-slate-200 px-2 py-1 text-red-500 font-bold">page.(js, tsx)</span>.</p>
+            <p>Maintenant, la route <span className="rounded-lg bg-slate-200 px-2 py-1 text-red-500 font-bold">/users</span> est disponible.</p>
+          </div>
         </div>
       </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
     </div>
   )
 }

@@ -20,6 +20,6 @@
       }
     ]
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/ErrorBoundary.js", "app/blog/layout.tsx", "app/blog/layout.tsx", "components/ErrorBoundary.js"],
   "exclude": ["node_modules"]
 }
